@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Dashboard
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content no-padding id="page2">
+  <ion-grid >
+    <ion-row>
+      <ion-col col-6>
+        <ion-card>
+          <ion-list>
+            <ion-item>
+              Balance <ion-icon item-right name="arrow-dropdown" *ngIf="hideBalance" (click)="hideCard(false)"></ion-icon>
+              <ion-icon item-right name="arrow-dropup" *ngIf="!hideBalance" (click)="hideCard(true)"></ion-icon>
+            </ion-item>
+            <ion-item>
+                30 000
+            </ion-item>
+          </ion-list>
+        </ion-card>
+      </ion-col>
+      <ion-col col-6>
+          <ion-card no-padding>
+            <ion-list>
+              <ion-item>
+                Balance <ion-icon item-right name="arrow-dropdown" *ngIf="hide" (click)="hideCard(false)"></ion-icon>
+                <ion-icon item-right name="arrow-dropup" *ngIf="!hide" (click)="hideCard(true)"></ion-icon>
+              </ion-item>
+              <ion-item>
+                  30 000
+              </ion-item>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col col-6>
+          <ion-card>
+            <ion-list>
+              <ion-item>
+                Balance <ion-icon item-right name="arrow-dropdown" *ngIf="hide" (click)="hideCard(false)"></ion-icon>
+                <ion-icon item-right name="arrow-dropup" *ngIf="!hide" (click)="hideCard(true)"></ion-icon>
+              </ion-item>
+              <ion-item>
+                  30 000
+              </ion-item>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+        <ion-col col-6>
+            <ion-card>
+              <ion-list>
+                <ion-item>
+                  Balance <ion-icon item-right name="arrow-dropdown" *ngIf="hide" (click)="hideCard(false)"></ion-icon>
+                  <ion-icon item-right name="arrow-dropup" *ngIf="!hide" (click)="hideCard(true)"></ion-icon>
+                </ion-item>
+                <ion-item>
+                    30 000
+                </ion-item>
+              </ion-list>
+            </ion-card>
+          </ion-col>
+      </ion-row>
+  </ion-grid>
+
+</ion-content>
